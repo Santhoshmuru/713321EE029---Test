@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registeration Form</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" href="testlogo.png">
+</head>
+<style>
+    .f{
+        text-align: center;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+background-color: aqua;
+    }
+    .ok{
+font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+    .ps{text-align: center;
+background-color: rgb(105, 89, 249);
+    }
+    .a{
+        font-size: x-large;
+        color: red;
+    }
+    .button{
+        color: green;
+    }
+</style>
+<body><center>
+    <img src="testapplyimg.png">
+    <section class="f"><h1>Registeration Form</h1></section>
+    <section class="ok"><h1>College </h1></section>
+     <li>SNSCE</li>
+     <li>SNSCT</li>
+     <li> SNSCAS</li>
+<br>
+<section class="ok"><h1>Departmant</h1></section>
+    
+     <li>EEE</li>
+     <li>ECE</li>
+     <li>MECH</li>
+     <li>Commerce</li>
+     <li>Accounts</li>
+     <li>Zoology</li>
+     <hr>
+    </ul> <b>
+        <section class="ps">  FIRST NAME</section><br>
+    <input type="text" name="Firstname" >
+    <br><br>
+    <section class="ps">  LAST NAME</section><br>
+    <input type="text" name="Lastname">
+    <br><br>
+    <section class="ps"> AGE</section><br>
+    <input type="text" name="Age" >
+    <br><br>
+    <section class="ps"> GENDER<br></section>
+    <input type="radio" name="gender">Male<br>
+    <input type="radio" name="gender">Female<br>
+    <br>
+    <section class="ps"> MAIL<br></section><br>
+    <input type="text" name="Mail"><br>
+    <br>
+    <section class="ps"> COLLEGE<br></section><br>
+    <select>
+     <option value="SNSCE">SNSCE</option>
+     <option value="SNSCT">SNSCT</option>
+     <option value="SNSCAS">SNSCAS</option>
+    </select>
+    <br>
+    <br>
+    <section class="ps">  DEPARTMENT</section><br>
+   <select>
+    <option value="EEE">EEE</option>
+    <option value="ECE">ECE</option>
+    <option value="MECH">MECH</option>
+    <option value="CSE">CSE</option>
+    <option value="IT">IT</option>
+    <option value="AIDS">AIDS</option>
+    <option value="COMMERCE">COMMERCE</option>
+    <option value="ACCOUNTS">ACCOUNTS</option>
+ </select>
+  <br> <br>
+  <section class="ps"> Residing<br></section>
+     <input type="checkbox" name="stay" value="hostel">Hostel<br>
+     <input type="checkbox" name="stay"value="Day scholar">Day scholar<br>
+     <input type="checkbox" name="stay" value="Room">Room<br>
+     <br>
+     <section class="ps">  Blood<br></section><br>
+     <select num="Blood">
+     <option value="A+">A+</option>
+     <option value="B+">B+</option>
+     <option value="A-">A-</option>
+     <option value="AB-">AB-</option>
+     <option value="O+">O+</option>
+ </select>
+ <br>
+ <br><section class="button">
+    <button class="buy">Register</button></section>
+<script>
+function greetings(){
+        alert("REGISTERATION WAS COMPLETED");
+    }
+    const buttons = document.querySelectorAll("button.buy")
+
+    console.log(buttons)
+    buttons.forEach (function(button){
+         button.addEventListener('click',greetings)
+    }
+    )
+
+
+</script>
+
+ </html>
